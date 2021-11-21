@@ -8,12 +8,15 @@ console.log(l)
 if(l.includes('medium')){
    questions_arr = (await import('../public/api/medium_level_questions.js')).default
    console.log('medium')
+   console.log(questions_arr)
 }else if(l.includes('basic')){
    questions_arr = (await import('../public/api/basic_level_questions.js')).default
    console.log('basic')
+   console.log(questions_arr)
 }else{
    questions_arr = (await import('../public/api/hard_level_questions.js')).default
    console.log('hard')
+   console.log(questions_arr)
 
 }
 
