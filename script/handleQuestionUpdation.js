@@ -2,9 +2,11 @@ home_page_link.addEventListener('click',()=>history.back())
 
 
 let questions_arr = []
-if(location == 'http://127.0.0.1:5500/pages/medium_level.html'){
+const l = location.toString()
+// console.log(l.includes('basic'))
+if(l.includes('medium')){
    questions_arr = (await import('../public/api/medium_level_questions.js')).default
-}else{
+}else if(l.includes('basic')){
    questions_arr = (await import('../public/api/basic_level_questions.js')).default
 }
 
