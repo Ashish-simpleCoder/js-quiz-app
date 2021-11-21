@@ -1,0 +1,11 @@
+@import "../index.scss";
+@import "./q_container";
+
+main{
+   text-align: center;
+   padding: 0 3rem;
+}
+main>img{
+   margin:3rem auto;
+   width:clamp(13rem,15rem,15vw);
+}

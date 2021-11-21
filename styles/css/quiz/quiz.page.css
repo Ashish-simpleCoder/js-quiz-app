@@ -1,0 +1,200 @@
+.text-primary {
+  color: #FFDF00;
+}
+
+.bg-primary {
+  color: #FFDF00;
+}
+
+.text-secondary {
+  color: #592899;
+}
+
+.bg-secondary {
+  color: #592899;
+}
+
+.text-error {
+  color: #f13636;
+}
+
+.bg-error {
+  color: #f13636;
+}
+
+:root {
+  --clr:rgb(20,20,20);
+  --body-bg:white;
+  --p-clr:#FFDF00;
+  --s-clr:#FFDF00;
+  --header-bg:white;
+  --font-clr:#252000;
+  --hero-btn-clr:#252000;
+  --menu-bg:white;
+  --border:rgb(219, 219, 219);
+  --border-hover:rgb(68, 68, 68);
+  --back-btn-bg:#f8f8f8;
+  --q-container-bg:rgb(245, 245, 245);
+  --q-container-shadow:rgba(0,0,0,0.2);
+  --q-clr:#592899;
+  --option-bg:white;
+}
+
+.dark-theme {
+  --clr:rgb(240, 240, 240);
+  --body-bg:rgb(27, 27, 27);
+  --p-clr:#FFDF00;
+  --s-clr:#FFDF00;
+  --header-bg:rgb(37, 37, 37);
+  --font-clr:#dddddd;
+  --hero-btn-clr:#252000;
+  --menu-bg:rgb(43, 43, 43);
+  --border:rgb(43, 43, 43);
+  --border-hover:rgb(0, 0, 0);
+  --back-btn-bg:#3a3a3a;
+  --q-container-bg:rgb(36, 36, 36);
+  --q-container-shadow:rgba(0,0,0,0.2);
+  --q-clr:#b379ff;
+  --option-bg:#3a3a3a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--clr);
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+}
+
+body {
+  max-width: 200rem;
+  background: var(--body-bg);
+  overflow-x: hidden;
+  margin: auto;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  background: #FFDF00;
+  font-weight: 500;
+}
+
+header {
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--header-bg);
+  padding: clamp(1rem, 1.2rem, 1.2vw) clamp(2rem, 2.4rem, 2.4vw);
+}
+header h3, header a {
+  font-size: clamp(2.2rem, 2.4rem, 2.4vw);
+  cursor: pointer;
+  color: var(--clr);
+}
+header h3 span, header a span {
+  color: var(--clr);
+}
+header img {
+  cursor: pointer;
+  height: clamp(3rem, 3.2rem, 3.2vw);
+}
+
+#q_container {
+  background: var(--q-container-bg);
+  max-width: 70rem;
+  margin: auto;
+  border-radius: 0.3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.5rem 1rem var(--q-container-shadow);
+  border: 1px solid var(--border);
+  border-top: none;
+}
+#q_container .q_number {
+  position: absolute;
+  background: #7F3CD4;
+  padding: clamp(1rem, 1.2rem, 1.2vw);
+  font-size: clamp(1.6rem, 1.7rem, 1.7vw);
+  font-weight: 600;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+#q_container div.q {
+  text-align: left;
+  margin: 3rem 0rem 2rem;
+  padding: 0 2rem;
+  width: 100%;
+}
+#q_container div.q h2 {
+  font-size: clamp(1.7rem, 1.9rem, 1.9vw);
+  font-weight: 600;
+  color: var(--q-clr);
+}
+
+div.options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+div.options li {
+  width: 100%;
+  min-height: 4rem;
+  max-width: 25ch;
+  border: 1px solid var(--border);
+  background: var(--option-bg);
+  line-height: clamp(3.5rem, 4rem, 4vh);
+  font-size: clamp(1.5rem, 1.6rem, 1.6vw);
+  padding: 0.3rem 0.5rem;
+  color: var(--clr);
+}
+@media (max-width: 700px) {
+  div.options li {
+    max-width: unset;
+    width: 100%;
+  }
+}
+div.options li:hover {
+  background: #7F3CD4;
+  cursor: pointer;
+  color: white;
+}
+
+main {
+  text-align: center;
+  padding: 0 3rem;
+}
+
+main > img {
+  margin: 3rem auto;
+  width: clamp(13rem, 15rem, 15vw);
+}

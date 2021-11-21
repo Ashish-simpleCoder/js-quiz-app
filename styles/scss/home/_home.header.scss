@@ -1,0 +1,15 @@
+header{
+   .site_title{
+      font-size: $header-title-font-size;
+      font-weight: $pr-font-weight;
+   }
+
+
+
+   .logo_container{
+      display:flex;
+      img{
+         margin-right:clamp(1rem,1.2rem,1.2vw);
+      }
+   }
+}
