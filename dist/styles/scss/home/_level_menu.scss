@@ -1,12 +1,14 @@
 #level_menu{
    position: fixed;
    width: 100%;
-   max-width: 35rem;
+   max-width: 50rem;
    height: 40rem;
    background: var(--body-bg);
-   top:50%;
    left:50%;
-   transform: translate(-50%,-80%);
+   // top:50%;
+   // transform: translate(-50%,-80%);
+   transform: translate(-50%,0%);
+   top:100%;
    box-shadow:0.3rem 0.3rem 1rem rgba(0,0,0,0.2);
    border-radius: 0.3rem;
    opacity: 0;
@@ -17,15 +19,17 @@
       position: absolute;
       right:0;
       top: 0;
-      padding: 0.5rem 1rem;
+      padding: 0.7rem 1.5rem;
       background: $error;
+      font-size: 2rem;
    }
 }
 
 
 .active_menu{
    opacity: 1 !important;
-   transform: translate(-50%,-35%) !important;
+   // transform: translate(-50%,-35%) !important;
+   top:50% !important;
    z-index: unset !important;
 }
 
