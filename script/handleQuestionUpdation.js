@@ -2,8 +2,9 @@ home_page_link.addEventListener('click',()=>history.back())
 
 
 let questions_arr = []
+
 const l = location.toString()
-// console.log(l.includes('basic'))
+console.log(l)
 if(l.includes('medium')){
    questions_arr = (await import('../public/api/medium_level_questions.js')).default
 }else if(l.includes('basic')){
