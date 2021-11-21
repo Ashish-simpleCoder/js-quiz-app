@@ -1,6 +1,4 @@
 export default function questionRenderer( question_arr, marks ){
-   console.log(question_arr)
-   console.log('ok')
    const arr_question = question_arr[window.q_index]
    window.clicked = false
 

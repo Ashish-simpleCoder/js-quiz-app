@@ -181,14 +181,14 @@ section#hero_container img:nth-child(2) {
 #hero_btn {
   font-size: clamp(2rem, 2.2rem, 2.2vw);
   margin-top: 3rem;
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 1.5rem;
   color: black;
 }
 
 #level_menu {
   position: fixed;
   width: 100%;
-  max-width: 35rem;
+  max-width: 50rem;
   height: 40rem;
   background: var(--body-bg);
   left: 50%;
@@ -204,8 +204,9 @@ section#hero_container img:nth-child(2) {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1.5rem;
   background: #f13636;
+  font-size: 2rem;
 }
 
 .active_menu {

@@ -1,7 +1,7 @@
 #level_menu{
    position: fixed;
    width: 100%;
-   max-width: 35rem;
+   max-width: 50rem;
    height: 40rem;
    background: var(--body-bg);
    left:50%;
@@ -19,8 +19,9 @@
       position: absolute;
       right:0;
       top: 0;
-      padding: 0.5rem 1rem;
+      padding: 0.7rem 1.5rem;
       background: $error;
+      font-size: 2rem;
    }
 }
 
