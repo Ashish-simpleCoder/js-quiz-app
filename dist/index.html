@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./public/imgs/js_32.png" type="image/x-icon">
+   <link rel="stylesheet" href="./styles/css/home/home.page.css">
+   <title>JS Quiz App</title>
+</head>
+
+<body class="">
+   <header>
+      <div class="logo_container">
+         <img src="./public/imgs/js_64.png" alt="site logo">
+         <h3 class="site_title">Quiz App</h3>
+      </div>
+      <div class="theme_container">
+         <img id='theme_btn' src="./public/imgs/dark_mode_btn.png" alt="dark mode btn">
+      </div>
+   </header>
+
+   <main>
+      <img id='js_img' src="./public/imgs/js_256.png" alt="js image">
+      <section id="hero_container">
+         <img src="./public/imgs/code_2.jpg" alt="hero img">
+         <img src="./public/imgs/code_2.jpg" alt="hero img">
+      </section>
+
+      <h1 id="hero_title">A Javascript Quiz App made in Vanilla JS</h1>
+      <button id='hero_btn'>Start Quiz</button>
+
+      <div id="level_menu">
+         <div class="part1">
+            <button id='close_menu_btn'>X</button>
+            <h3>Select Level</h3>
+         </div>
+         <div class="part2 links_container">
+            <a href="./pages/basic_level.html">Basic</a>
+            <a href="./pages/medium_level.html">Medium</a>
+            <a href="">Hard</a>
+         </div>
+      </div>
+
+   </main>
+</body>
+<script>
+   addEventListener('load',async()=>{
+      hero_btn.addEventListener('click',()=> level_menu.classList.add('active_menu') )
+      close_menu_btn.addEventListener('click',()=> level_menu.classList.remove('active_menu') )
+      await import('./script/darkMode.js')
+   })
+</script>
+</html>

@@ -1,0 +1,17 @@
+@import "../index.scss";
+@import "./home.header";
+@import "./home.hero";
+@import "./level_menu";
+
+main{
+   text-align: center;
+   #js_img{
+      position: absolute;
+      left:50%;
+      top:45%;
+      transform:translate(-50%,-50%) scale(0.5);
+      @media(max-width:700px){
+         top:40%;
+      }
+   }
+}
