@@ -1,3 +1,4 @@
+await import('./darkMode.js')
 home_page_link.addEventListener('click',()=>history.back())
 
 
@@ -32,6 +33,5 @@ window.marks = 0
 
 addEventListener('load',async()=>{
    (await import('./questionRenderer.js')).default(questions_arr,marks)
-   await import('./darkMode.js')
 })
 

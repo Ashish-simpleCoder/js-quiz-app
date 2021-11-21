@@ -2,6 +2,7 @@ section#hero_container{
    display: flex;
    position: relative;
    height: clamp(23rem,40rem,40rem);
+   overflow-x:hidden ;
 
 
    img{

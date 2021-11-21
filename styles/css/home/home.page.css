@@ -138,6 +138,7 @@ section#hero_container {
   display: flex;
   position: relative;
   height: 40rem;
+  overflow-x: hidden;
 }
 section#hero_container img {
   width: 59%;
@@ -190,9 +191,9 @@ section#hero_container img:nth-child(2) {
   max-width: 35rem;
   height: 40rem;
   background: var(--body-bg);
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, 0%);
+  top: 100%;
   box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   opacity: 0;
@@ -209,7 +210,7 @@ section#hero_container img:nth-child(2) {
 
 .active_menu {
   opacity: 1 !important;
-  transform: translate(-50%, -35%) !important;
+  top: 50% !important;
   z-index: unset !important;
 }
 
