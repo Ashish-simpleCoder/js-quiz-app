@@ -1,6 +1,6 @@
 export default function darkMode(){
    let dark_theme = (localStorage.getItem('dark_theme')) || false
-   console.log(dark_theme)
+   // console.log(dark_theme)
 
 
    dark_theme === 'true' ?

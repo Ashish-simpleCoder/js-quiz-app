@@ -1,15 +1,17 @@
 {
   "name": "3_js_quiz_app",
+  "homepage": "https://ashish-simplecoder.github.io/js-quiz-app/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy":"gh-pages -d dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ashish-simpleCoder",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.0.0",
     "sass": "^1.43.4"
