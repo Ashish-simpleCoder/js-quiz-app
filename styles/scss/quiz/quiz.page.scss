@@ -9,3 +9,7 @@ main>img{
    margin:3rem auto;
    width:clamp(13rem,15rem,15vw);
 }
+
+.threeD-shadow{
+   box-shadow: 0rem 0.3rem 1rem var(--q-container-shadow), inset 0.5rem 0.5rem 1rem rgb(255, 255, 255);
+}

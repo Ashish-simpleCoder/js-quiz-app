@@ -31,18 +31,20 @@
   --font-clr:#252000;
   --hero-btn-clr:#252000;
   --menu-bg:white;
-  --border:rgb(219, 219, 219);
+  --border:rgb(235, 235, 235);
   --border-hover:rgb(68, 68, 68);
   --back-btn-bg:#f8f8f8;
   --q-container-bg:rgb(245, 245, 245);
   --q-container-shadow:rgba(0,0,0,0.2);
   --q-clr:#592899;
   --option-bg:white;
+  --threeD-shadow: 0rem 0.6rem 1rem var(--q-container-shadow), inset 0.5rem 0.5rem 1rem rgb(255, 255, 255);
+  --threeD-option-shadow: 0 0.3rem 0.3rem var(--q-container-shadow), inset 0.3rem 0.3rem 0.3rem rgb(255, 255, 255);
 }
 
 .dark-theme {
-  --clr:rgb(240, 240, 240);
-  --body-bg:rgb(27, 27, 27);
+  --clr:rgb(255, 255, 255);
+  --body-bg:rgb(22, 22, 22);
   --p-clr:#FFDF00;
   --s-clr:#FFDF00;
   --header-bg:rgb(37, 37, 37);
@@ -52,10 +54,12 @@
   --border:rgb(43, 43, 43);
   --border-hover:rgb(0, 0, 0);
   --back-btn-bg:#3a3a3a;
-  --q-container-bg:rgb(36, 36, 36);
+  --q-container-bg:rgb(30, 30, 30);
   --q-container-shadow:rgba(0,0,0,0.2);
-  --q-clr:#b379ff;
-  --option-bg:#3a3a3a;
+  --q-clr:#8f3bfd;
+  --option-bg:#2c2c2c;
+  --threeD-shadow: 0rem 0.3rem 1rem var(--q-container-shadow), inset 0.5rem 0.5rem 0.5rem rgb(30, 30, 30);
+  --threeD-option-shadow: 0 0.3rem 0.3rem var(--q-container-shadow), inset 0.3rem 0.3rem 0.3rem rgb(51, 51, 51);
 }
 
 * {
@@ -65,7 +69,7 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: var(--clr);
   letter-spacing: 0.05rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 body {
@@ -86,8 +90,8 @@ a {
 
 button {
   border: none;
-  border-radius: 0.3rem;
-  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.15), -0.3rem 0 0.5rem rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 
@@ -127,13 +131,11 @@ header img {
   background: var(--q-container-bg);
   max-width: 70rem;
   margin: auto;
-  border-radius: 0.3rem;
   position: relative;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0.5rem 1rem var(--q-container-shadow);
-  border: 1px solid var(--border);
-  border-top: none;
+  box-shadow: var(--threeD-shadow);
+  border-radius: 0.5rem;
 }
 #q_container .q_number {
   position: absolute;
@@ -143,6 +145,8 @@ header img {
   font-weight: 600;
   color: white;
   transform: translate(-50%, -50%);
+  box-shadow: 0rem 0.3rem 1rem var(--q-container-shadow), inset 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
 }
 #q_container div.q {
   text-align: left;
@@ -151,8 +155,7 @@ header img {
   width: 100%;
 }
 #q_container div.q h2 {
-  font-size: clamp(1.7rem, 1.9rem, 1.9vw);
-  font-weight: 600;
+  font-size: clamp(1.8rem, 2rem, 2vw);
   color: var(--q-clr);
 }
 
@@ -170,12 +173,14 @@ div.options li {
   width: 100%;
   min-height: 4rem;
   max-width: 25ch;
-  border: 1px solid var(--border);
   background: var(--option-bg);
   line-height: clamp(3.5rem, 4rem, 4vh);
   font-size: clamp(1.5rem, 1.6rem, 1.6vw);
   padding: 0.3rem 0.5rem;
   color: var(--clr);
+  box-shadow: var(--threeD-option-shadow);
+  border-radius: 0.5rem;
+  transition: all 0.25s ease;
 }
 @media (max-width: 700px) {
   div.options li {
@@ -187,6 +192,13 @@ div.options li:hover {
   background: #7F3CD4;
   cursor: pointer;
   color: white;
+  box-shadow: inset 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.4), inset -0.3rem -0.3rem 0.3rem rgba(112, 112, 112, 0.4);
+}
+@media (min-width: 700px) {
+  div.options li:hover {
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+  }
 }
 
 main {
@@ -197,4 +209,8 @@ main {
 main > img {
   margin: 3rem auto;
   width: clamp(13rem, 15rem, 15vw);
+}
+
+.threeD-shadow {
+  box-shadow: 0rem 0.3rem 1rem var(--q-container-shadow), inset 0.5rem 0.5rem 1rem white;
 }

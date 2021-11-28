@@ -37,12 +37,12 @@ section#hero_container{
 }
 
 #hero_title{
-   text-align: center;
-   font-size: clamp(2.5rem,3.5rem,3.5vw);
+   // text-align: center;
+   font-size: clamp(3rem,4rem,4vw);
 }
 #hero_btn{
    font-size: $pr-font-size;
    margin-top:3rem;
-   padding: 1rem 1.5rem;
+   padding: clamp(0.8rem,1rem,1vw) clamp(2rem,2.6rem,2.6vw);
    color:black;
 }

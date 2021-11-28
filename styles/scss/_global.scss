@@ -8,7 +8,7 @@
 
    color:var(--clr);
    letter-spacing: 0.05rem;
-   font-weight: 500;
+   font-weight: 600;
 }
 body{
    max-width: 200rem;
@@ -28,8 +28,8 @@ a{
 
 button{
    border:none;
-   border-radius: 0.3rem;
-   box-shadow: 0 0.3rem 0.5rem $shadow;
+   border-radius: 0.5rem;
+   box-shadow: 0 0.3rem 0.5rem $shadow,-0.3rem 0 0.5rem $shadow;
    cursor: pointer;
 }
 
