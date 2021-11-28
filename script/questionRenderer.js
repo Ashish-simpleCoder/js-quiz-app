@@ -5,7 +5,10 @@ export default function questionRenderer( question_arr, marks ){
    options.innerHTML = ''
    question.innerHTML = arr_question.q
 
-   q_number.textContent = 'Q. '+parseInt(window.q_index+1)
+   imgUpdater(arr_question.img)    //updating the img
+
+   q_number.textContent = 'Q. '+parseInt(window.q_index+1)      //updating the question
+
    arr_question.options.forEach(option=> {
       const li = document.createElement('li')
       li.id = option
@@ -31,4 +34,16 @@ export default function questionRenderer( question_arr, marks ){
 
       options.appendChild(li)
    } )
+}
+
+
+function imgUpdater(img){
+   const question_img = document.querySelector('#question_img')
+   if(img){
+      question_img.classList.add('question_img')
+      question_img.src = img  //updating question img
+   }else{
+      question_img.src =  '../public/imgs/js_256.png' //updating question img
+      question_img.classList.remove('question_img')
+   }
 }

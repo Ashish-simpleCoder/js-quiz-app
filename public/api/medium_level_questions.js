@@ -1,5 +1,29 @@
 const medium_questions_arr = [
    {
+      q:'What is the output of the following code ?',
+      img:'../public/imgs/medium/reduce_pattern.png',
+      options:['8', '6', '4', '3'],
+      true_ans:'3'
+   },
+   {
+      q:'What is the output of the following code ?',
+      img:'../public/imgs/medium/argument_obj.png',
+      options:['<b>argument</b> is not defined', '234', 'syntax error', '[2, 3, 4]'],
+      true_ans:'[2, 3, 4]'
+   },
+   {
+      q:'What is the output of the following code ?',
+      img:'../public/imgs/medium/function_currying.png',
+      options:['10', '6', 'syntax error', 'runtime error'],
+      true_ans:'6'
+   },
+   {
+      q:'What will the following code print ?',
+      img:'../public/imgs/medium/arr_some.png',
+      options:['true', 'false'],
+      true_ans:'false'
+   },
+   {
       q:'Is a function in Javascript an Object?',
       options:['True', 'False'],
       true_ans:'True'
