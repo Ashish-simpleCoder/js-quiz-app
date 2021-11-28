@@ -44,6 +44,7 @@ function imgUpdater(img){
       question_img.src = img  //updating question img
    }else{
       question_img.src =  '../public/imgs/js_256.png' //updating question img
+      if(question_img.src === '../public/imgs/js_256.png' ) return
       question_img.classList.remove('question_img')
    }
 }

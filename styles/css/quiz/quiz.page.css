@@ -77,10 +77,12 @@ body {
   background: var(--body-bg);
   overflow-x: hidden;
   margin: auto;
+  height: 100%;
 }
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 a {
@@ -112,7 +114,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background: var(--header-bg);
-  padding: clamp(1rem, 1.2rem, 1.2vw) clamp(2rem, 2.4rem, 2.4vw);
+  padding: clamp(0.6rem, 1rem, 1vw) clamp(2rem, 2.4rem, 2.4vw);
 }
 header h3, header a {
   font-size: clamp(2.2rem, 2.4rem, 2.4vw);
@@ -130,19 +132,23 @@ header img {
 #q_container {
   background: var(--q-container-bg);
   max-width: 70rem;
-  margin: auto;
+  margin: auto auto auto 2rem;
   position: relative;
   display: flex;
   flex-direction: column;
   box-shadow: var(--threeD-shadow);
   border-radius: 0.5rem;
 }
+@media (min-width: 700px) {
+  #q_container {
+    width: 60%;
+  }
+}
 #q_container .q_number {
   position: absolute;
   background: #7F3CD4;
   padding: clamp(1rem, 1.2rem, 1.2vw);
   font-size: clamp(1.6rem, 1.7rem, 1.7vw);
-  font-weight: 600;
   color: white;
   transform: translate(-50%, -50%);
   box-shadow: 0rem 0.3rem 1rem var(--q-container-shadow), inset 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
@@ -150,7 +156,7 @@ header img {
 }
 #q_container div.q {
   text-align: left;
-  margin: 3rem 0rem 2rem;
+  margin: 2rem 1rem 1rem 1rem;
   padding: 0 2rem;
   width: 100%;
 }
@@ -203,28 +209,38 @@ div.options li:hover {
 
 main {
   text-align: center;
-  padding: 0 3rem;
-  margin-top: 5rem;
+  padding: 2rem clamp(2rem, 2.4rem, 2.4vw);
+  height: 70vh;
+  max-height: 60rem;
 }
 @media (min-width: 700px) {
   main {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
   }
 }
 
 main .q_img_container {
-  margin: 3rem auto;
+  margin: 1rem auto 1rem auto;
   height: clamp(25rem, 30rem, 30vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 main .q_img_container img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 15rem;
 }
 @media (min-width: 700px) {
   main .q_img_container {
-    width: 50%;
+    width: 40%;
+    justify-content: right;
   }
+}
+
+.question_img {
+  max-height: 100% !important;
 }
 
 .threeD-shadow {

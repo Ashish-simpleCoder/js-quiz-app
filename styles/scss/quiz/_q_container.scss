@@ -1,22 +1,21 @@
 #q_container{
    background: var(--q-container-bg);
    max-width: 70rem;
-   margin: auto;
+   margin: auto auto auto 2rem;
    position: relative;
    display: flex;
    flex-direction: column;
-   // box-shadow: 0rem 0.3rem 1rem var(--q-container-shadow), inset 0.5rem 0.5rem 1rem rgb(255, 255, 255);
    box-shadow: var(--threeD-shadow);
-   // border:1px solid var(--border);
-   // border-top: none;
    border-radius: 0.5rem;
+   @media (min-width:700px){
+      width:60%;
+   }
 
    .q_number{
       position: absolute;
       background: #7F3CD4;
       padding: clamp(1rem, 1.2rem,1.2vw);
       font-size: clamp(1.6rem,1.7rem,1.7vw);
-      font-weight: 600;
       color:white;
       transform:translate(-50%,-50%);
       box-shadow: 0rem 0.3rem 1rem var(--q-container-shadow), inset 0.3rem 0.3rem 0.3rem rgba(0, 0, 0,0.2);
@@ -26,7 +25,7 @@
 
    div.q{
       text-align: left;
-      margin: 3rem 0rem 2rem;
+      margin: 2rem 1rem 1rem 1rem;
       padding: 0 2rem;
       width: 100%;
      h2{
