@@ -31,21 +31,17 @@ window.clicked = false
 window.marks = 0
 
 
-addEventListener('load',async()=>{
    const l = location.toString()
+   console.log(location)
    if(l.includes('medium')){
-      questions_arr = (await import('../public/api/medium_level_questions.js')).default
-      console.log(questions_arr)
+      import('../public/api/medium_level_questions.js').then(data=>questions_arr=data.default)
    }
    else if(l.includes('basic')){
-      questions_arr = (await import('../public/api/basic_level_questions.js')).default
-      console.log(questions_arr)
+      questions_arr = import('../public/api/basic_level_questions.js').then(data=>questions_arr=data.default)
    }
    else{
-      questions_arr = (await import('../public/api/hard_level_questions.js')).default
-      console.log(questions_arr)
+      questions_arr = import('../public/api/hard_level_questions.js').then(data=>questions_arr=data.default)
    }
+  import('./questionRenderer.js').then(f=>f.default(questions_arr,marks))
 
-   (await import('./questionRenderer.js')).default(questions_arr,marks)
-})
 

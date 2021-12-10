@@ -1,4 +1,4 @@
-export default function questionRenderer( question_arr, marks ){
+export default async function questionRenderer( question_arr, marks ){
    const arr_question = question_arr[window.q_index]
    window.clicked = false
 
