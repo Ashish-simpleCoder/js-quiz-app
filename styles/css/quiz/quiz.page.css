@@ -212,9 +212,9 @@ div.options li:hover {
   width: 100%;
   height: 100%;
   background: #202022;
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: none;
 }
 .loader .c {
   width: clamp(5rem, 7rem, 7vw);
