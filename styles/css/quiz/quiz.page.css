@@ -207,7 +207,7 @@ div.options li:hover {
   }
 }
 
-.loader {
+.loader, .img_loader {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -216,7 +216,7 @@ div.options li:hover {
   align-items: center;
   justify-content: center;
 }
-.loader .c {
+.loader .c, .img_loader .c {
   width: clamp(5rem, 7rem, 7vw);
   height: clamp(5rem, 7rem, 7vw);
   border: 1rem solid transparent;
@@ -224,10 +224,10 @@ div.options li:hover {
   position: absolute;
   animation: animate_loaders 1s linear infinite;
 }
-.loader .c1 {
+.loader .c1, .img_loader .c1 {
   border-top-color: red;
 }
-.loader .c2 {
+.loader .c2, .img_loader .c2 {
   border-bottom-color: purple;
 }
 @keyframes animate_loaders {

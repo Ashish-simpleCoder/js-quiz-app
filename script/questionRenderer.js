@@ -40,6 +40,7 @@ export default async function questionRenderer( question_arr, marks ){
 
 
 function imgUpdater(img){
+   img_loader.style.display = 'flex'
    const question_img = document.querySelector('#question_img')
    if(img){
       question_img.classList.add('question_img')
@@ -49,4 +50,5 @@ function imgUpdater(img){
       if(question_img.src === '../public/imgs/js_256.png' ) return
       question_img.classList.remove('question_img')
    }
+   img_loader.style.display = 'none'
 }
