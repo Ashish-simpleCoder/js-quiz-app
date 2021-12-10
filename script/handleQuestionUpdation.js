@@ -35,13 +35,15 @@ window.marks = 0
    console.log(location)
    if(l.includes('medium')){
       import('../public/api/medium_level_questions.js').then(data=>questions_arr=data.default)
+      import('./questionRenderer.js').then(f=>f.default(questions_arr,marks))
    }
    else if(l.includes('basic')){
-      questions_arr = import('../public/api/basic_level_questions.js').then(data=>questions_arr=data.default)
+      import('../public/api/basic_level_questions.js').then(data=>questions_arr=data.default)
+      import('./questionRenderer.js').then(f=>f.default(questions_arr,marks))
    }
    else{
-      questions_arr = import('../public/api/hard_level_questions.js').then(data=>questions_arr=data.default)
+      import('../public/api/hard_level_questions.js').then(data=>questions_arr=data.default)
+      import('./questionRenderer.js').then(f=>f.default(questions_arr,marks))
    }
-  import('./questionRenderer.js').then(f=>f.default(questions_arr,marks))
 
 
