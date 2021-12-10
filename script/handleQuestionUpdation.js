@@ -33,12 +33,17 @@ window.marks = 0
 
 addEventListener('load',async()=>{
    const l = location.toString()
-   if(l.includes('medium'))
+   if(l.includes('medium')){
       questions_arr = (await import('../public/api/medium_level_questions.js')).default
-   else if(l.includes('basic'))
+      console.log(questions_arr)
+   }
+   else if(l.includes('basic')){
       questions_arr = (await import('../public/api/basic_level_questions.js')).default
+      console.log(questions_arr)
+   }
    else{
       questions_arr = (await import('../public/api/hard_level_questions.js')).default
+      console.log(questions_arr)
    }
 
    (await import('./questionRenderer.js')).default(questions_arr,marks)
