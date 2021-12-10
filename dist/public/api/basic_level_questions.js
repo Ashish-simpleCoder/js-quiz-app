@@ -1,5 +1,15 @@
 const basic_questions_arr = [
    {
+      q:'What will the following code print?',
+      img:'../public/imgs/basic_imgs/new_set_arr.png',
+      options:[
+         '{1, 2, 2, 3, 3, 3, 5, 7, 8, 10}',
+         '{1, 2, 3, 5, 7, 8, 10}',
+         '{10, 8, 7, 5, 3, 3, 3, 2, 2, 1}',
+      ],
+      true_ans:'{1, 2, 3, 5, 7, 8, 10}'
+   },
+   {
       q:'Javascript is _________ compiled programming language.',
       options:['Interpreted or JIT','Static', 'Hybrid', 'Amazing'],
       true_ans:'Interpreted or JIT'

@@ -3,9 +3,43 @@
 
 main{
    text-align: center;
-   padding: 0 3rem;
+   padding:2rem $pr-pad-h;
+   height: 70vh;
+   max-height: 60rem;
+
+   @media (min-width:700px) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+   }
+
 }
-main>img{
-   margin:3rem auto;
-   width:clamp(13rem,15rem,15vw);
+
+main .q_img_container{
+   margin: 1rem auto 1rem auto;
+   height: clamp(25rem,30rem, 30vw);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   img{
+      max-width:100%;
+      max-height: 15rem;
+   }
+
+   @media(min-width:700px){
+      width:40%;
+      // border: 1px solid;
+      justify-content: right;
+      // text-align:right;
+
+   }
+
+}
+.question_img{
+   // width:100%;
+   // max-width: 50rem;
+   max-height: 100% !important;
+}
+.threeD-shadow{
+   box-shadow: 0rem 0.3rem 1rem var(--q-container-shadow), inset 0.5rem 0.5rem 1rem rgb(255, 255, 255);
 }
