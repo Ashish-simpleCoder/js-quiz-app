@@ -1,5 +1,5 @@
 export default async function questionRenderer( question_arr, marks ){
-   loader.style.display = 'flex'
+   // loader.style.display = 'flex'
    const arr_question = question_arr[window.q_index]
    window.clicked = false
 
@@ -34,8 +34,8 @@ export default async function questionRenderer( question_arr, marks ){
       })
 
       options.appendChild(li)
+      loader.style.display = 'none'
    } )
-   loader.style.display = 'none'
 }
 
 
