@@ -76,3 +76,42 @@ div.options{
       }
    }
 }
+
+
+.loader{
+   position: absolute;
+   width:100%;
+   height:100%;
+   background: rgb(32, 32, 34);
+   // display: flex;
+   align-items: center;
+   justify-content: center;
+   display: none;
+
+   .c{
+      width: clamp(5rem,7rem,7vw);
+      height: clamp(5rem,7rem,7vw);
+      border:1rem solid transparent;
+      border-radius: 50%;
+      position: absolute;
+      animation: animate_loaders 1s linear infinite;
+   }
+   .c1{
+      border-top-color: red;
+   }
+   .c2{
+      border-bottom-color: purple;
+   }
+   @keyframes animate_loaders{
+      0%{
+         border-width: clamp(0.5rem, 1rem, 1vw);
+         transform: rotate(0);
+      }50%{
+         border-width: clamp(0.2rem,0.5rem,0.5vw);
+         transform: rotate(180deg);
+      }100%{
+         border-width: clamp(0.5rem, 1rem, 1vw);
+         transform: rotate(360deg);
+      }
+   }
+}
