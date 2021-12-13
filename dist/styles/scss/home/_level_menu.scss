@@ -7,7 +7,7 @@
    left:50%;
    transform: translate(-50%,0%);
    top:100%;
-   border-radius: 0.3rem;
+   border-radius: 0.5rem;
    transition: all 0.3s ease;
    box-shadow: 0rem 1rem 1rem rgba(0,0,0,0.5);
 
@@ -31,9 +31,10 @@
    padding: 1rem 2rem;
 }
 .part1{
+   border-bottom:1px solid rgba(0,0,0,0.2);
    h3{
       font-size: clamp(2.2rem,2.5rem,2.5vw);
-      color:var(--font-clr)
+      color:var(--font-clr);
    }
 }
 

@@ -1,5 +1,8 @@
-export default function questionRenderer( question_arr, marks ){
+export default async function questionRenderer( question_arr, marks ){
+   // loader.style.display = 'flex'
    const arr_question = question_arr[window.q_index]
+   // const progress_bar_percent = (window.q_index/question_arr.length)*100
+   // console.log(progress_bar_percent)
    window.clicked = false
 
    options.innerHTML = ''
@@ -16,6 +19,7 @@ export default function questionRenderer( question_arr, marks ){
       li.textContent = option
 
       li.addEventListener('click',()=>{
+         updateProgressBar(question_arr)
          if(window.clicked) return
          window.clicked = true
          li.id !== arr_question.true_ans && (li.style.background = 'red')
@@ -26,18 +30,19 @@ export default function questionRenderer( question_arr, marks ){
          setTimeout(async()=>{
             window.q_index<question_arr.length-1 && (
                window.q_index++,
-               // (await import('./question_renderer.js')).default(question_arr,marks)
                questionRenderer(question_arr,marks)
-            )
-         },1000)
+               )
+         },0)
       })
 
       options.appendChild(li)
+      loader.style.display = 'none'
    } )
 }
 
 
 function imgUpdater(img){
+   img_loader.style.display = 'flex'
    const question_img = document.querySelector('#question_img')
    if(img){
       question_img.classList.add('question_img')
@@ -47,4 +52,10 @@ function imgUpdater(img){
       if(question_img.src === '../public/imgs/js_256.png' ) return
       question_img.classList.remove('question_img')
    }
+   img_loader.style.display = 'none'
+}
+
+function updateProgressBar(question_arr){
+   progress_bar.style.width = (((window.q_index+1)/question_arr.length)*100)+'%'   //increasing width
+
 }
