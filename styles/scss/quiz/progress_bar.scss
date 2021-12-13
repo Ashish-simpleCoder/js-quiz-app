@@ -1,0 +1,9 @@
+.progress_bar{
+   position: fixed;
+   bottom:0;
+   left:0;
+   width:0%;
+   height: 1rem;
+   background:green;
+   transition: width 0.3s ease;
+}

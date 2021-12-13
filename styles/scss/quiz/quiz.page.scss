@@ -1,13 +1,15 @@
 @import "../index.scss";
 @import "./q_container";
+@import "./progress_bar.scss";
 
 main{
    text-align: center;
-   padding:2rem $pr-pad-h;
+   padding:0 $pr-pad-h 3rem $pr-pad-h;
    height: 70vh;
    max-height: 60rem;
 
    @media (min-width:700px) {
+      padding-top: 3rem;
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
@@ -42,4 +44,16 @@ main .q_img_container{
 }
 .threeD-shadow{
    box-shadow: 0rem 0.3rem 1rem var(--q-container-shadow), inset 0.5rem 0.5rem 1rem rgb(255, 255, 255);
+}
+a{
+   font-weight: 500;
+   border-radius: 0.5rem;
+   background: rgba(0,0,0,0.03);
+   padding:0.3rem 0.5rem;
+   &:hover{
+      background: rgba(0,0,0,0.06);
+   }
+   span{
+      margin-right:1rem;
+   }
 }

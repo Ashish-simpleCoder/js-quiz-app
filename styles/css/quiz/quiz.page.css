@@ -68,7 +68,7 @@
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: var(--clr);
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.07rem;
   font-weight: 600;
 }
 
@@ -101,6 +101,7 @@ li {
   list-style: none;
   text-decoration: none;
   cursor: pointer;
+  border-radius: 0.5rem;
 }
 
 button {
@@ -114,7 +115,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background: var(--header-bg);
-  padding: clamp(0.6rem, 1rem, 1vw) clamp(2rem, 2.4rem, 2.4vw);
+  padding: clamp(0.5rem, 1rem, 1vw) clamp(2rem, 3rem, 3vw);
 }
 header h3, header a {
   font-size: clamp(2.2rem, 2.4rem, 2.4vw);
@@ -132,7 +133,7 @@ header img {
 #q_container {
   background: var(--q-container-bg);
   max-width: 70rem;
-  margin: auto auto auto 2rem;
+  margin: auto auto 3rem 2rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -142,6 +143,7 @@ header img {
 @media (min-width: 700px) {
   #q_container {
     width: 60%;
+    margin-bottom: auto;
   }
 }
 #q_container .q_number {
@@ -187,6 +189,7 @@ div.options li {
   box-shadow: var(--threeD-option-shadow);
   border-radius: 0.5rem;
   transition: all 0.25s ease;
+  font-weight: 500;
 }
 @media (max-width: 700px) {
   div.options li {
@@ -245,14 +248,25 @@ div.options li:hover {
   }
 }
 
+.progress_bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1rem;
+  background: green;
+  transition: width 0.3s ease;
+}
+
 main {
   text-align: center;
-  padding: 2rem clamp(2rem, 2.4rem, 2.4vw);
+  padding: 0 clamp(2rem, 2.4rem, 2.4vw) 3rem clamp(2rem, 2.4rem, 2.4vw);
   height: 70vh;
   max-height: 60rem;
 }
 @media (min-width: 700px) {
   main {
+    padding-top: 3rem;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -283,4 +297,17 @@ main .q_img_container img {
 
 .threeD-shadow {
   box-shadow: 0rem 0.3rem 1rem var(--q-container-shadow), inset 0.5rem 0.5rem 1rem white;
+}
+
+a {
+  font-weight: 500;
+  border-radius: 0.5rem;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 0.3rem 0.5rem;
+}
+a:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+a span {
+  margin-right: 1rem;
 }

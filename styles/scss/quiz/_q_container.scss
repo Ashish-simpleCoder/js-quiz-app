@@ -1,7 +1,7 @@
 #q_container{
    background: var(--q-container-bg);
    max-width: 70rem;
-   margin: auto auto auto 2rem;
+   margin: auto auto 3rem 2rem;
    position: relative;
    display: flex;
    flex-direction: column;
@@ -9,6 +9,7 @@
    border-radius: 0.5rem;
    @media (min-width:700px){
       width:60%;
+      margin-bottom: auto;
    }
 
    .q_number{
@@ -59,6 +60,7 @@ div.options{
       box-shadow: var(--threeD-option-shadow);
       border-radius: 0.5rem;
       transition: all 0.25s ease;
+      font-weight: 500;
 
       @media (max-width:700px){
          max-width: unset;

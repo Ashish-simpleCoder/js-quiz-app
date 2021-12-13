@@ -32,7 +32,6 @@ window.marks = 0
 
 
 const l = location.toString()
-console.log(location)
 if(l.includes('medium')){
    import('../public/api/medium_level_questions.js').then(data=>{
       import('./questionRenderer.js').then(f=>f.default(data.default,marks))
