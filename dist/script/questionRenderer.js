@@ -32,7 +32,7 @@ export default async function questionRenderer( question_arr, marks ){
                window.q_index++,
                questionRenderer(question_arr,marks)
                )
-         },0)
+         },1000)
       })
 
       options.appendChild(li)
