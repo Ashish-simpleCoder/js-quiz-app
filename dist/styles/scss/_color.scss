@@ -46,24 +46,27 @@ $colors :(
 
 :root{
    --clr:rgb(20,20,20);
-   --body-bg:white;
+   --body-bg:hsl(0, 0%, 90%);
    --p-clr:#FFDF00;
    --s-clr:#FFDF00;
-   --header-bg:white;
+   --header-bg:hsl(0, 0%, 100%);
    --font-clr:#252000;
    --hero-btn-clr:#252000;
-   --menu-bg:white;
+   --menu-bg:hsl(0, 0%, 100%);
 
    --border:rgb(235, 235, 235);
    --border-hover:rgb(68, 68, 68);
 
    --back-btn-bg:#f8f8f8;
-   --q-container-bg:rgb(245, 245, 245);
+   --q-container-bg:hsl(0, 0%, 96%);
+   // --q-container-bg:white;
+
    --q-container-shadow:rgba(0,0,0,0.2);
    --q-clr:#592899;
    --option-bg:white;
+   // --option-bg:hsl(0, 0%, 90%);
 
-   --threeD-shadow: 0rem 0.6rem 1rem var(--q-container-shadow), inset 0.5rem 0.5rem 1rem rgb(255, 255, 255);
+   --threeD-shadow: 0rem 0.6rem 1rem var(--q-container-shadow), inset 0.5rem 0.5rem 1rem hsl(0, 0%, 95%);
    --threeD-option-shadow: 0 0.3rem 0.3rem var(--q-container-shadow), inset 0.3rem 0.3rem 0.3rem rgb(255, 255, 255);
 }
 

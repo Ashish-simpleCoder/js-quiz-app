@@ -7,6 +7,7 @@
    flex-direction: column;
    box-shadow: var(--threeD-shadow);
    border-radius: 0.5rem;
+   padding: 1rem;
    @media (min-width:700px){
       width:60%;
       margin-bottom: auto;
@@ -50,13 +51,11 @@ div.options{
       width: 100%;
       min-height: clamp(3.5rem,4rem,4rem);
       max-width: 25ch;
-      // border:1px solid var(--border);
       background: var(--option-bg);
       line-height: clamp(3.5rem,4rem,4vh);
       font-size: clamp(1.5rem,1.6rem,1.6vw);
       padding: 0.3rem 0.5rem;
       color:var(--clr);
-      // box-shadow: 0 0.3rem 0.3rem var(--q-container-shadow), inset 0.3rem 0.3rem 0.3rem rgb(255, 255, 255);
       box-shadow: var(--threeD-option-shadow);
       border-radius: 0.5rem;
       transition: all 0.25s ease;
