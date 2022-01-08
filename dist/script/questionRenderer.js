@@ -23,9 +23,9 @@ function renderOptions(obj){
    li.innerHTML = option
 
    li.addEventListener('click',()=>{
-      updateProgressBar(question_arr, q_index)
       const listenerParams = {li, current_question, marks, q_index, question_arr}
       optionClickListener(listenerParams)
+      // updateProgressBar(question_arr, q_index)
    })
 
    options.appendChild(li)
@@ -50,6 +50,7 @@ function optionClickListener(listenerParams){
    setTimeout(async()=>{
       q_index<question_arr.length-1 && (
          q_index++,
+         updateProgressBar(question_arr, q_index),
          questionRenderer(question_arr,marks, q_index)
          )
    },1000)
