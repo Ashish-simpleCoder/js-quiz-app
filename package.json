@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist",
-    "g":"gulp gulpfile.js"
+    "g": "gulp gulpfile.js"
   },
   "keywords": [],
   "author": "Ashish-simpleCoder",
