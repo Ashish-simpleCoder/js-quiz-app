@@ -1,18 +1,9 @@
 export default function darkMode(){
-   let dark_theme = (localStorage.getItem('dark_theme')) || false
-   // console.log(dark_theme)
-
-
-   dark_theme === 'true' ?
-   document.body.classList.add('dark-theme') : document.body.classList.remove('dark-theme')
-
+   let dark_theme = JSON.parse(localStorage.getItem('dark_theme')) || false
+   document.body.classList.toggle('dark-theme',dark_theme)
 
    theme_btn.addEventListener('click',()=>{
-      if(dark_theme === 'true'){
-         dark_theme = false
-      }else{
-         dark_theme = true
-      }
+      dark_theme = !dark_theme
       localStorage.setItem('dark_theme',JSON.stringify(dark_theme))
       document.body.classList.toggle('dark-theme')
    })

@@ -5,14 +5,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="../public/imgs/js_32.png" type="image/x-icon">
    <link rel="stylesheet" href="../styles/css/quiz/quiz.page.css">
-   <script src='../script/handleQuestionUpdation.js' type="module"></script>
+   <script src='../script/index.js' type="module"></script>
    <title>JS Quiz App</title>
 </head>
 <body class="">
    <header>
       <div class="logo_container">
          <a id='home_page_link' href='../index.html'>
-            <span><</span>Medium Level
+            <span><</span><span id='level' class="level"></span>Level
          </a>
       </div>
       <div class="theme_container">
@@ -36,8 +36,7 @@
             <h2 id='question'>Javascript Language is </h2>
          </div>
 
-         <div class='options' id='options'>
-         </div>
+         <div class='options' id='options'></div>
          <div class="loader" id='loader'>
             <div class="c c1"></div>
             <div class="c c2"></div>

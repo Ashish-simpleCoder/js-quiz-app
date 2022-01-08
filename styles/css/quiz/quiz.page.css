@@ -125,6 +125,9 @@ header h3, header a {
 header h3 span, header a span {
   color: var(--clr);
 }
+header h3 span.level, header a span.level {
+  text-transform: capitalize;
+}
 header img {
   cursor: pointer;
   height: clamp(3rem, 3.2rem, 3.2vw);
