@@ -11,6 +11,9 @@ header{
       cursor: pointer;
       color:var(--clr);
       span{color:var(--clr)}
+      span.level{
+         text-transform: capitalize;
+      }
    }
 
 
