@@ -2,7 +2,6 @@ header{
    box-shadow: 0 0.4rem 0.8rem rgba(0,0,0,0.2);
    @include flex-sb;
    background: var(--header-bg);
-   // padding: $pr-pad-v $pr-pad-h;
    padding:clamp(0.5rem,1rem,1vw) clamp(2rem,3rem,3vw);
 
 
@@ -16,9 +15,13 @@ header{
       }
    }
 
-
    img{
       cursor: pointer;
       height: clamp(3rem,3.2rem,3.2vw);
+   }
+
+   .logo_container>a{
+      background: var(--body-bg);
+
    }
 }
