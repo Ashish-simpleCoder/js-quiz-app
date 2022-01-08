@@ -11,8 +11,8 @@ const basic_questions_arr = [
    },
    {
       q:'Javascript is _________ compiled programming language.',
-      options:['Interpreted or JIT','Static', 'Hybrid', 'Amazing'],
-      true_ans:'Interpreted or JIT'
+      options:['Interpreted and JIT','Static', 'Hybrid', 'Amazing'],
+      true_ans:'Interpreted and JIT'
    },
    {
       q:'How to declare a variable?',
@@ -49,9 +49,14 @@ const basic_questions_arr = [
       options:[
          'A function which can be accessed only locally.',
          'A function which has no parameters',
-         'A function that can be treated like any other variable or passes as an argument',
+         'A function that can be treated like any other variable or passed as an argument',
       ],
-      true_ans:'A function that can be treated like any other variable or passes as an argument',
+      true_ans:'A function that can be treated like any other variable or passed as an argument',
+   },
+   {
+      q:'What is full form of <b class="red">ES</b>?',
+      options:['Easy Script','End of Script','Ecma Script','Errors of Script'],
+      true_ans:'Ecma Script',
    },
    {
       q:'Is semicolon(;) is compulsory in JS?',
@@ -64,15 +69,20 @@ const basic_questions_arr = [
       true_ans:'Array.print()'
    },
    {
-      q:'What is typeof(Null)?',
-      options:['Null','Array'],
-      true_ans:'Null',
+      q:'What is typeof(null)?',
+      options:['Null','Array','object','undefined'],
+      true_ans:'object',
    },
    {
       q:'Javascript is faster than C Language?',
       options:['True','False'],
       true_ans:'False',
    },
+   {
+      q:'Javascript is <b>Multi Threaded</b> language',
+      options:['True','False'],
+      true_ans:'False',
+   }
 ]
 
 export default basic_questions_arr

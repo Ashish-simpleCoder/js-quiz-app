@@ -20,7 +20,7 @@ function renderOptions(obj){
    const li = document.createElement('li')
    li.id = option
    if(option.length > 50) li.style.maxWidth = '100%'
-   li.textContent = option
+   li.innerHTML = option
 
    li.addEventListener('click',()=>{
       updateProgressBar(question_arr, q_index)
