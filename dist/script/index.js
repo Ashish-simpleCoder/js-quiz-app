@@ -14,9 +14,8 @@ const level_name = location.search.slice(location.search.indexOf('=')+1)
 pageRenderer(import(`../public/api/${level_name}_level_questions.js`))
 function pageRenderer(instruction){
    instruction.then(({default:question_arr})=>{
-      // console.log(question_arr.length)
       import('./questionRenderer.js').then(({default:func})=>{
-         func(question_arr,marks, q_index)
+         func(question_arr, window.marks,window.q_index)
       })
    })
 }
