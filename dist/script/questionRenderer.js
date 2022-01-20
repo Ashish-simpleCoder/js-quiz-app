@@ -39,11 +39,12 @@ function optionClickListener(listenerParams){
    else{
       window.clicked = true
       if(li.id === current_question.true_ans){
-         li.style.background = 'green'
+         // li.style.background = 'green'
          marks++
-      }else{
-         li.style.background = 'red'
       }
+      // else{
+      //    li.style.background = 'red'
+      // }
    }
 
    // after selecting any option call the questionRenderer() function again after specified time
