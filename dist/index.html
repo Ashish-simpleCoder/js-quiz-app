@@ -15,7 +15,7 @@
          <h3 class="site_title">Quiz App</h3>
       </div>
       <div class="theme_container">
-         <img id='theme_btn' src="./public/imgs/dark_mode_btn.png" alt="dark mode btn">
+         <img id='theme_btn' class="theme-btn" src="" alt="dark mode btn">
       </div>
    </header>
 
@@ -47,7 +47,10 @@
    addEventListener('load',async()=>{
       hero_btn.addEventListener('click',()=> level_menu.classList.add('active_menu') )
       close_menu_btn.addEventListener('click',()=> level_menu.classList.remove('active_menu') )
-      await import('./script/darkMode.js')
+      const dark = 'public/imgs/dark_mode.png'
+      const light = 'public/imgs/light_mode.png'
+      const darkMode = await import('./src/darkMode.js')
+      darkMode.default(dark, light)
    })
 </script>
 </html>

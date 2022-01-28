@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="../public/imgs/js_32.png" type="image/x-icon">
    <link rel="stylesheet" href="../styles/css/quiz/quiz.page.css">
-   <script src='../script/index.js' type="module"></script>
+   <script src='../src/index.js' type="module"></script>
    <title>JS Quiz App</title>
 </head>
 <body class="">
@@ -16,7 +16,7 @@
          </a>
       </div>
       <div class="theme_container">
-         <img id='theme_btn' src="../public/imgs/dark_mode_btn.png" alt="dark mode btn">
+         <img id='theme_btn' class='theme-btn' src="../public/imgs/dark_mode.png" alt="dark mode btn">
       </div>
    </header>
 
@@ -29,7 +29,7 @@
          <img id='question_img' src="../public/imgs/js_256.png" alt="js img">
       </div>
 
-      <section id="q_container">
+      <section id="q_container" class='q_container'>
          <div class="q_number" id='q_number'></div>
 
          <div class='q'>
@@ -45,5 +45,10 @@
       <div id="progress_bar" class='progress_bar'></div>
 
    </main>
+   <script>
+      const dark = '../public/imgs/dark_mode.png'
+      const light = '../public/imgs/light_mode.png'
+     import('../src/darkMode.js').then(({default:darkMode})=>darkMode(dark,light))
+   </script>
 </body>
 </html>

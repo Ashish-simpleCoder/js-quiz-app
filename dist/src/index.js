@@ -1,4 +1,3 @@
-await import('./darkMode.js')
 home_page_link.addEventListener('click',()=>history.back())
 
 let questions_arr = []

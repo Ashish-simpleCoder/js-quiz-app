@@ -1,4 +1,3 @@
-
 export default async function questionRenderer(question_arr, marks, q_index ){
    window.clicked = false
    const current_question = question_arr[q_index]
@@ -43,19 +42,13 @@ function optionClickListener(listenerParams){
          // li.style.background = 'green'
          window.marks++
       }
-      // else{
-      //    li.style.background = 'red'
-      // }
+      else{
+         li.style.background = 'red'
+      }
    }
 
    // after selecting any option call the questionRenderer() function again after specified time
    setTimeout(async()=>{
-      // q_index<question_arr.length-1 && (
-      //    q_index++,
-      //    // console.log(q_index,question_arr.length),
-      //    updateProgressBar(question_arr, q_index),
-      //    questionRenderer(question_arr,marks, q_index)
-      // )
          q_index++
          if(q_index == question_arr.length){
             const showResult = (await import('./showResult.js')).default
