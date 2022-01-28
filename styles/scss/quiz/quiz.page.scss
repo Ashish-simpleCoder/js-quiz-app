@@ -10,7 +10,7 @@ main{
    height: 70vh;
    max-height: 60rem;
 
-   @media (min-width:700px) {
+   @media (min-width:900px) {
       padding-top: 3rem;
       display: flex;
       flex-direction: row-reverse;
@@ -30,7 +30,7 @@ main .q_img_container{
       max-height: 15rem;
    }
 
-   @media(min-width:700px){
+   @media(min-width:900px){
       width:40%;
       // border: 1px solid;
       justify-content: right;

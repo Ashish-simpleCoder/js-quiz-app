@@ -31,10 +31,10 @@
   --font-clr:#252000;
   --hero-btn-clr:#252000;
   --menu-bg:hsl(0, 0%, 100%);
-  --border:rgb(235, 235, 235);
+  --border:hsl(0, 0%, 70%);
   --border-hover:rgb(68, 68, 68);
   --back-btn-bg:#f8f8f8;
-  --q-container-bg:hsl(0, 0%, 96%);
+  --q-container-bg:hsl(0, 0%, 95%);
   --q-container-shadow:rgba(0,0,0,0.2);
   --q-clr:#592899;
   --option-bg:white;
@@ -150,7 +150,7 @@ header .logo_container > a {
   border-radius: 0.5rem;
   padding: 1rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .q_container {
     width: 60%;
     margin: auto auto 3rem 2rem;
@@ -191,7 +191,7 @@ div.options {
 div.options li {
   width: 100%;
   min-height: 4rem;
-  max-width: 25ch;
+  max-width: 30ch;
   background: var(--option-bg);
   line-height: clamp(3.5rem, 4rem, 4vh);
   font-size: clamp(1.5rem, 1.6rem, 1.6vw);
@@ -280,7 +280,7 @@ main {
   height: 70vh;
   max-height: 60rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   main {
     padding-top: 3rem;
     display: flex;
@@ -300,7 +300,7 @@ main .q_img_container img {
   max-width: 100%;
   max-height: 15rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   main .q_img_container {
     width: 40%;
     justify-content: right;

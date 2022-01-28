@@ -9,7 +9,7 @@
    box-shadow: var(--threeD-shadow);
    border-radius: 0.5rem;
    padding: 1rem;
-   @media (min-width:700px){
+   @media (min-width:900px){
       width:60%;
       margin: auto auto 3rem 2rem;
       margin-bottom: auto;
@@ -52,7 +52,7 @@ div.options{
    li{
       width: 100%;
       min-height: clamp(3.5rem,4rem,4rem);
-      max-width: 25ch;
+      max-width: 30ch;
       background: var(--option-bg);
       line-height: clamp(3.5rem,4rem,4vh);
       font-size: clamp(1.5rem,1.6rem,1.6vw);

@@ -31,10 +31,10 @@
   --font-clr:#252000;
   --hero-btn-clr:#252000;
   --menu-bg:hsl(0, 0%, 100%);
-  --border:rgb(235, 235, 235);
+  --border:hsl(0, 0%, 70%);
   --border-hover:rgb(68, 68, 68);
   --back-btn-bg:#f8f8f8;
-  --q-container-bg:hsl(0, 0%, 96%);
+  --q-container-bg:hsl(0, 0%, 95%);
   --q-container-shadow:rgba(0,0,0,0.2);
   --q-clr:#592899;
   --option-bg:white;
@@ -232,7 +232,7 @@ section#hero_container img:nth-child(2) {
 }
 
 .part1 {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--border);
 }
 .part1 h3 {
   font-size: clamp(2.2rem, 2.5rem, 2.5vw);

@@ -31,7 +31,8 @@
    padding: 1rem 2rem;
 }
 .part1{
-   border-bottom:1px solid rgba(0,0,0,0.2);
+   // border-bottom:1px solid rgba(0,0,0,0.2);
+   border-bottom:1px solid var(--border);
    h3{
       font-size: clamp(2.2rem,2.5rem,2.5vw);
       color:var(--font-clr);
