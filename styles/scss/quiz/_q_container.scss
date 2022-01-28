@@ -1,7 +1,8 @@
-#q_container{
+.q_container{
    background: var(--q-container-bg);
    max-width: 70rem;
-   margin: auto auto 3rem 2rem;
+   // margin: auto auto 3rem 2rem;
+   margin:3rem auto auto 2rem;
    position: relative;
    display: flex;
    flex-direction: column;
@@ -10,6 +11,7 @@
    padding: 1rem;
    @media (min-width:700px){
       width:60%;
+      margin: auto auto 3rem 2rem;
       margin-bottom: auto;
    }
 
@@ -60,6 +62,7 @@ div.options{
       border-radius: 0.5rem;
       transition: all 0.25s ease;
       font-weight: 500;
+      user-select: none;
 
       @media (max-width:700px){
          max-width: unset;

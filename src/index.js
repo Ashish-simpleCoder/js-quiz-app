@@ -1,4 +1,4 @@
-await import('./darkMode.js')
+// await import('./darkMode.js')
 home_page_link.addEventListener('click',()=>history.back())
 
 let questions_arr = []
@@ -15,7 +15,7 @@ pageRenderer(import(`../public/api/${level_name}_level_questions.js`))
 function pageRenderer(instruction){
    instruction.then(({default:question_arr})=>{
       import('./questionRenderer.js').then(({default:func})=>{
-         func(question_arr,marks, q_index)
+         func(question_arr, window.marks,window.q_index)
       })
    })
 }

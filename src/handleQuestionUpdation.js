@@ -11,15 +11,14 @@ window.marks = 0
 const level_name = location.search.slice(location.search.indexOf('=')+1)
 
 // rendering the page dynamically from query string
-pageRenderer(import(`../public/api/${level_name}_level_questions.js`))
-function pageRenderer(instruction){
+const pageRenderer = (instruction) =>{
    instruction.then(({default:question_arr})=>{
-      console.log(question_arr.length)
       import('./questionRenderer.js').then(({default:func})=>{
          func(question_arr,marks, q_index)
       })
    })
 }
+pageRenderer(import(`../public/api/${level_name}_level_questions.js`))
 
 // insrting the level name in the span tag with id=level
 level.textContent = level_name

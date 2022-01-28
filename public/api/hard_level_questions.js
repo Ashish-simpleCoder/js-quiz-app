@@ -1,66 +1,38 @@
 const hard_questions_arr = [
    {
-      q:'Is a function in Javascript an Object?',
-      options:['True', 'False'],
-      true_ans:'True'
+      q:'Which of the following function is technically Higher Order Function in Javascript ?',
+      img:'../public/imgs/hard_imgs/higher_order_func.png',
+      options:["firstClassFunc", 'higherOrder'],
+      true_ans:'firstClassFunc'
    },
    {
-      q:'Which of the following feature is not present in Javascript?',
-      options:['Dynamic Typing', 'Inheritance', 'Static Typing'],
-      true_ans:'Static Typing'
+      q:'What will be the outout of following code ?',
+      img:'../public/imgs/hard_imgs/increment_numb.png',
+      options:["15","17","18","16"],
+      true_ans:'18'
    },
    {
-      q:'Which of the following Library/Framerwork is made of Javascript?',
-      options:['ReactJS' ,'FlutterJS', 'ThreeJS', 'VueJS'],
-      true_ans:'FlutterJS'
+      q:'What will be the outout of following code ?',
+      img:'../public/imgs/hard_imgs/greater_condition.png',
+      options:["false", 'true'],
+      true_ans:'false'
    },
    {
-      q:'Can Array.map() method alter the size of an array?',
-      options:['True', 'False'],
-      true_ans:'False'
+      q:'What will be the outout of following code ?',
+      img:'../public/imgs/hard_imgs/boolean_addition.png',
+      options:["1", '5', '6' , '2'],
+      true_ans:'1'
    },
    {
-      q:'Can Array.filter() method returns a new array?',
-      options:['True', 'False'],
-      true_ans:'True'
+      q:'What will be the outout of following code ?',
+      img:'../public/imgs/hard_imgs/smaller_condition.png',
+      options:["false",'true'],
+      true_ans:'true'
    },
    {
-      q:'Full form of <b>BOM</b>',
-      options:['Big Object Model', 'Big Omega Model','Browser Object Model', 'Blast Object Model'],
-      true_ans:'Browser Object Model'
-   },
-   {
-      q:'How does an <b>Event</b> propagate in JS?',
-      options:['Through Event Bubbling', 'Through Event Capturing'],
-      true_ans:'Through Event Bubbling'
-   },
-   {
-      q:'Is <b>MultiThreading</b> is available in JS?',
-      options:['True', 'False'],
-      true_ans:'False'
-   },
-   {
-      q:'How to declare an <b>Arrow function</b>?',
-      options:[
-         'const func = () => {}',
-         'const func = {}',
-         'const func => {}',
-         `const func(){\n}`
-   ],
-      true_ans:'root Element'
-   },
-   {
-      q:'What will the <b>document.documentElement</b> will return?',
-      options:['body Element', 'root Element', 'head Element'],
-      true_ans:'root Element'
-   },
-   {
-      q:'What is <b>Hoisting</b> ?',
-      options:[
-         'It is a mechanism where variables and functions declarations all moved to the bottom of their scope',
-         'It is a mechanism where variables and functions declarations all moved to the top of their scope'
-      ],
-      true_ans:'It is a mechanism where variables and functions declarations all moved to the top of their scope'
+      q:'What is the full form of <b>C.O.V.E</b>',
+      options:["Closing On Variable Environment","Closed Over Variable Environment","Callback Of Value Environment","Closure Of Variable Environment"],
+      true_ans:'Closed Over Variable Environment'
    },
 ]
 

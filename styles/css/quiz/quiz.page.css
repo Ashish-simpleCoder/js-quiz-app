@@ -43,23 +43,26 @@
 }
 
 .dark-theme {
-  --clr:rgb(255, 255, 255);
-  --body-bg:rgb(22, 22, 22);
+  --clr:hsl(0, 0%, 95%);
+  --body-bg:hsl(0, 0%, 7%);
   --p-clr:#FFDF00;
   --s-clr:#FFDF00;
-  --header-bg:rgb(37, 37, 37);
+  --header-bg:hsl(0, 0%, 15%);
   --font-clr:#dddddd;
   --hero-btn-clr:#252000;
-  --menu-bg:rgb(43, 43, 43);
-  --border:rgb(43, 43, 43);
+  --menu-bg:hsl(0, 0%, 10%);
+  --border:hsl(0, 0%, 17%);
   --border-hover:rgb(0, 0, 0);
-  --back-btn-bg:#3a3a3a;
-  --q-container-bg:rgb(30, 30, 30);
+  --back-btn-bg:hsl(0, 0%, 23%);
+  --q-container-bg:hsl(0, 0%, 10%);
   --q-container-shadow:rgba(0,0,0,0.2);
   --q-clr:#8f3bfd;
-  --option-bg:#2c2c2c;
+  --option-bg:hsl(0, 0%, 12%);
   --threeD-shadow: 0rem 0.3rem 1rem var(--q-container-shadow), inset 0.5rem 0.5rem 0.5rem rgb(30, 30, 30);
   --threeD-option-shadow: 0 0.3rem 0.3rem var(--q-container-shadow), inset 0.3rem 0.3rem 0.3rem rgb(51, 51, 51);
+}
+.dark-theme .theme-btn {
+  filter: invert(0.9);
 }
 
 * {
@@ -115,10 +118,10 @@ header {
   justify-content: space-between;
   align-items: center;
   background: var(--header-bg);
-  padding: clamp(0.5rem, 1rem, 1vw) clamp(2rem, 3rem, 3vw);
+  padding: clamp(1rem, 1.2rem, 1.2vw) clamp(2rem, 3rem, 3vw);
 }
 header h3, header a {
-  font-size: clamp(2.2rem, 2.4rem, 2.4vw);
+  font-size: clamp(2rem, 2.2rem, 2.2vw);
   cursor: pointer;
   color: var(--clr);
 }
@@ -136,10 +139,10 @@ header .logo_container > a {
   background: var(--body-bg);
 }
 
-#q_container {
+.q_container {
   background: var(--q-container-bg);
   max-width: 70rem;
-  margin: auto auto 3rem 2rem;
+  margin: 3rem auto auto 2rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -148,12 +151,13 @@ header .logo_container > a {
   padding: 1rem;
 }
 @media (min-width: 700px) {
-  #q_container {
+  .q_container {
     width: 60%;
+    margin: auto auto 3rem 2rem;
     margin-bottom: auto;
   }
 }
-#q_container .q_number {
+.q_container .q_number {
   position: absolute;
   background: #7F3CD4;
   padding: clamp(1rem, 1.2rem, 1.2vw);
@@ -163,13 +167,13 @@ header .logo_container > a {
   box-shadow: 0rem 0.3rem 1rem var(--q-container-shadow), inset 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
 }
-#q_container div.q {
+.q_container div.q {
   text-align: left;
   margin: 2rem 1rem 1rem 1rem;
   padding: 0 2rem;
   width: 100%;
 }
-#q_container div.q h2 {
+.q_container div.q h2 {
   font-size: clamp(1.8rem, 2rem, 2vw);
   color: var(--q-clr);
 }
@@ -197,6 +201,7 @@ div.options li {
   border-radius: 0.5rem;
   transition: all 0.25s ease;
   font-weight: 500;
+  user-select: none;
 }
 @media (max-width: 700px) {
   div.options li {

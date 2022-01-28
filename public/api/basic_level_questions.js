@@ -35,6 +35,12 @@ const basic_questions_arr = [
       true_ans:'True'
    },
    {
+      q:'What will be the outout of following code ?',
+      img:'../public/imgs/basic_imgs/obj_change.png',
+      options:["js","javascript","JS","Javascript"],
+      true_ans:'Javascript'
+   },
+   {
       q:'How to find the legth of Array ?',
       options:['length.Array', 'Array.length','length(Array)','Array.size()'],
       true_ans:'Array.length'

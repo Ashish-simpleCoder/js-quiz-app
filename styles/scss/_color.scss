@@ -71,25 +71,30 @@ $colors :(
 }
 
 .dark-theme{
-   --clr:rgb(255, 255, 255);
-   --body-bg:rgb(22, 22, 22);
+   --clr:hsl(0, 0%, 95%);
+   --body-bg:hsl(0, 0%, 7%);
    --p-clr:#FFDF00;
    --s-clr:#FFDF00;
-   --header-bg:rgb(37, 37, 37);
+   --header-bg:hsl(0, 0%, 15%);
    --font-clr:#dddddd;
    --hero-btn-clr:#252000;
-   --menu-bg:rgb(43, 43, 43);
+   --menu-bg:hsl(0, 0%, 10%);
 
-   --border:rgb(43, 43, 43);
+   --border:hsl(0, 0%, 17%);
    --border-hover:rgb(0, 0, 0);
 
 
-   --back-btn-bg:#3a3a3a;
-   --q-container-bg:rgb(30, 30, 30);
+   --back-btn-bg:hsl(0, 0%, 23%);
+   --q-container-bg:hsl(0, 0%, 10%);
    --q-container-shadow:rgba(0,0,0,0.2);
    --q-clr:#8f3bfd;
-   --option-bg:#2c2c2c;
+   --option-bg:hsl(0, 0%, 12%);
 
    --threeD-shadow: 0rem 0.3rem 1rem var(--q-container-shadow), inset 0.5rem 0.5rem 0.5rem rgb(30, 30, 30);
    --threeD-option-shadow: 0 0.3rem 0.3rem var(--q-container-shadow), inset 0.3rem 0.3rem 0.3rem rgb(51, 51, 51);
+
+
+   .theme-btn{
+      filter:invert(0.9);
+   }
 }
