@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist",
-    "g": "gulp gulpfile.js"
+    "g": "gulp gulpfile.js",
+    "build:css": "pnpm tailwindcss -i ./dist/styles/input.css -o ./dist/styles/output.css --watch"
   },
   "keywords": [],
   "author": "Ashish-simpleCoder",

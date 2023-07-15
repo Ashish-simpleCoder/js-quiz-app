@@ -15,11 +15,11 @@
 }
 
 .text-error {
-  color: #f13636;
+  color: rgb(241, 54, 54);
 }
 
 .bg-error {
-  color: #f13636;
+  color: rgb(241, 54, 54);
 }
 
 :root {
@@ -96,7 +96,7 @@ a {
 button {
   border: none;
   border-radius: 0.5rem;
-  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.15), -0.3rem 0 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2), 0.3rem 0 0.5rem rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
@@ -226,7 +226,7 @@ div.options li:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #202022;
+  background: rgb(32, 32, 34);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -271,7 +271,7 @@ div.options li:hover {
 }
 
 .red {
-  color: #dd1d1d;
+  color: hsl(0, 77%, 49%);
 }
 
 main {
@@ -312,7 +312,7 @@ main .q_img_container img {
 }
 
 .threeD-shadow {
-  box-shadow: 0rem 0.3rem 1rem var(--q-container-shadow), inset 0.5rem 0.5rem 1rem white;
+  box-shadow: 0rem 0.3rem 1rem var(--q-container-shadow), inset 0.5rem 0.5rem 1rem rgb(255, 255, 255);
 }
 
 a {

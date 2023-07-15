@@ -15,11 +15,11 @@
 }
 
 .text-error {
-  color: #f13636;
+  color: rgb(241, 54, 54);
 }
 
 .bg-error {
-  color: #f13636;
+  color: rgb(241, 54, 54);
 }
 
 :root {
@@ -96,7 +96,7 @@ a {
 button {
   border: none;
   border-radius: 0.5rem;
-  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.15), -0.3rem 0 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2), 0.3rem 0 0.5rem rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
@@ -212,13 +212,14 @@ section#hero_container img:nth-child(2) {
   border-radius: 0.5rem;
   transition: all 0.3s ease;
   box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 #level_menu #close_menu_btn {
   position: absolute;
   right: 0;
   top: 0;
   padding: 0.5rem 2rem;
-  background: #f13636;
+  background: rgb(241, 54, 54);
   font-size: 2rem;
   border-radius: unset;
 }

@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="shortcut icon" href="../public/imgs/js_32.png" type="image/x-icon">
-   <link rel="stylesheet" href="../styles/css/quiz/quiz.page.css">
-   <script src='../src/index.js' type="module"></script>
-   <title>JS Quiz App</title>
-</head>
-<body class="">
-   <header>
-      <div class="logo_container">
-         <a id='home_page_link' href='../index.html'>
-            <span><</span><span id='level' class="level"></span>Level
-         </a>
-      </div>
-      <div class="theme_container">
-         <img id='theme_btn' class='theme-btn' src="../public/imgs/dark_mode.png" alt="dark mode btn">
-      </div>
-   </header>
-
-   <main>
-      <div class="q_img_container">
-         <div class="img_loader" id='img_loader'>
-            <div class="c c1"></div>
-            <div class="c c2"></div>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../public/imgs/js_32.png" type="image/x-icon" />
+      <link rel="stylesheet" href="../styles/css/quiz/quiz.page.css" />
+      <script src="../src/index.js" type="module"></script>
+      <title>JS Quiz App</title>
+   </head>
+   <body class="">
+      <header>
+         <div class="logo_container">
+            <a id="home_page_link" href="../index.html">
+               <span>&lt;</span><span id="level" class="level"></span>Level
+            </a>
          </div>
-         <img id='question_img' src="../public/imgs/js_256.png" alt="js img">
-      </div>
+         <div class="theme_container">
+            <img id="theme_btn" class="theme-btn" src="../public/imgs/dark_mode.png" alt="dark mode btn" />
+         </div>
+      </header>
 
-      <section id="q_container" class='q_container'>
-         <div class="q_number" id='q_number'></div>
-
-         <div class='q'>
-            <h2 id='question'>Javascript Language is </h2>
+      <main>
+         <div class="q_img_container">
+            <div class="img_loader" id="img_loader">
+               <div class="c c1"></div>
+               <div class="c c2"></div>
+            </div>
+            <img id="question_img" src="../public/imgs/js_256.png" alt="js img" />
          </div>
 
-         <div class='options' id='options'></div>
-         <div class="loader" id='loader'>
-            <div class="c c1"></div>
-            <div class="c c2"></div>
-         </div>
-      </section>
-      <div id="progress_bar" class='progress_bar'></div>
+         <section id="q_container" class="q_container">
+            <div class="q_number" id="q_number"></div>
 
-   </main>
-   <script>
-      const dark = '../public/imgs/dark_mode.png'
-      const light = '../public/imgs/light_mode.png'
-     import('../src/darkMode.js').then(({default:darkMode})=>darkMode(dark,light))
-   </script>
-</body>
+            <div class="q">
+               <h2 id="question">Javascript Language is</h2>
+            </div>
+
+            <div class="options" id="options"></div>
+            <div class="loader" id="loader">
+               <div class="c c1"></div>
+               <div class="c c2"></div>
+            </div>
+         </section>
+         <div id="progress_bar" class="progress_bar"></div>
+      </main>
+      <script>
+         const dark = '../public/imgs/dark_mode.png'
+         const light = '../public/imgs/light_mode.png'
+         import('../src/darkMode.js').then(({ default: darkMode }) => darkMode(dark, light))
+      </script>
+   </body>
 </html>
